@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<title>Travelling Website</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header id="header">
+<a href="#" class="logo">Picnica</a>
+<ul>
+
+<li><a href="#" class="active">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Destination</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</header>
+<section>
+<h2 id="text"><span>It's time for a new</span><br>Adventure
+</h2>
+<img src="bird1.png" id="bird1">
+<img src="bird2.png" id="bird2">
+<img src="forest.png" id="forest">
+<a href="#" id="btn">Explore</a>
+<img src="rocks.png" id="rocks">
+<img src="water.png" id="water">
+</section>
+<div class="sec"><h2>Dear Fellow Travelers,</h2><p>Handcrafting trips of a lifetime. That’s what motivates me and our team — in our La Jolla HQ and around the world — every day. We believe that every guest should have a trip of a lifetime. And if you’ve traveled with us 15 times, then lucky you… you’ve had 15 trips of a lifetime. It was a love of all things travel that motivated me to stow my banker’s briefcase and exchange it for a carry-on bag. But that wasn’t the original plan. The career path was finance, right up through the MBA from Northwestern. But banking didn’t fuel my soul. My passion is in connecting with people of different cultures, and immersing myself and others in a region—while still enjoying the creature comforts. It drove me to start Classic Journeys when we saw an unserved niche—cultural walking adventures.<br><br>
+
+From the first year’s offerings of six regions in three countries, we now explore more than 100 regions in 50 countries on seven continents. Along the way, Classic Journeys has become known as the world’s best walking and adventure tour company. Travelers choose us because we have a knack for helping them explore iconic places in new, better or more immersive ways. As an example, we noticed that every visitor to the Galapagos starting with Darwin on The Beagle explored on a ship. But not everyone wants to be or can be on a ship for a week. So we helped to pioneer island-based travel there.
+
+Since 1987, when I met my mother-in-law, I heard her stories of fantastic long weekends in Cuba. So in 2003, we began working with the Office of Foreign Assets Control at the Treasury Department to secure a license to legally bring Americans to Cuba. Ten years later, we were among the first companies to receive a license. I’ve made innumerable trips to the island since and we are now considered one of the foremost experts of travel in Cuba. You’d find similar stories for every one of our other trip regions.
+
+We’ve been honored and humbled that others have seen the merit in what we do. Among other awards, our company has been named World’s Best Tour Operator by Travel + Leisure magazine multiple times. Personally, it’s meant that our sons, Jack and Matthew, now young adults, have explored 34 and 33 countries, respectively.
+
+At the end of the day, our team is fortunate to play the role of well-connected friend, linking our guests with our friends around the world… amazing guides, artisans, winemakers, hoteliers, restauranteurs, naturalists, and too many others to list here. I invite you to experience the world with our family of well-connected locals, exploring the world in Classic Journeys style, on foot at eye level. Make this the year you enjoy a handcrafted trip of a lifetime.</p></div>
+<script>
+let text= document.getElementById('text');
+let bird1= document.getElementById('bird1');
+let bird2= document.getElementById('bird2');
+let forest= document.getElementById('forest');
+let btn= document.getElementById('btn');
+let rocks= document.getElementById('rocks');
+let water= document.getElementById('water');
+let header= document.getElementById('header');
+window.addEventListener('scroll',function(){let value=window.scrollY;
+	text.style.top=50+value*-0.5+'%';
+	bird1.style.top=value*-1.5+'px';
+	bird1.style.left=value*2+'px';
+	bird2.style.top=value*-1.5+'px';
+	bird2.style.left=value*-1.5+'px';
+	btn.style.marginTop=value*1.5+'px';	rocks.style.top=value*-0.12+'px';
+	forest.style.top=value*0.25+'px';
+	header.style.top=value*0.5+'px';
+})
+</script>
+</body>
+</html>
